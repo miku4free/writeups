@@ -12,7 +12,7 @@
 **Attachment:** [🔗 passwordless.zip](https://2025.imaginaryctf.org/files/passwordless/passwordless.zip)
 
 
-## My solution
+## Solution
 This challenge was my personal favourite of this CTF, since it's web-related and also included some very interesting knowledge required for the exploit.
 
 In this challenge, you are given a web app with login/registration screen, with the goal of reaching the dashboard screen containing the flag, which is only accessible for authenticated users.

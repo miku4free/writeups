@@ -10,7 +10,7 @@
 **Attachment:** [🔗 wave.wav](https://2025.imaginaryctf.org/files/wave/wave.wav)
 
 
-## My solution
+## Solution
 As the description hints, this challenge is fairly simple and does not require complicated techniques of getting the secret flag from the audio file.
 
 You can simply use the `strings` tool (preinstalled on Linux/macOS, can be installed from Sysinternals for Windows) to find the flag in the file's metadata:

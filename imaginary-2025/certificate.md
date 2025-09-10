@@ -10,7 +10,7 @@
 > https://eth007.me/cert/
 
 
-## My solution
+## Solution 
 This challenge was fairly simple, with the app being only client-side, meaning all source code we need is visible directly from the browser.
 
 First, I clicked around the app, getting familiar with the general structure. We have a simple website where we can generate participation certificates, with a simple form to input our information. For this challenge, we don't want our participation certificate though, but the one of the challenge creator, Eth007.
