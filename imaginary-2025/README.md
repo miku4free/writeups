@@ -10,6 +10,7 @@ This directory contains writeups for challenges from ImaginaryCTF 2025.
 | [Passwordless](passwordless.md) | Web | Ciaran | darius-it | [📝 Solution](passwordless.md) |
 | [Certificate](certificate.md) | Web | Eth007 | darius-it | [📝 Solution](certificate.md) |
 | [Significant](significant.md) | Misc | puzzler7 | darius-it | [📝 Solution](significant.md) |
+| [Obfuscated-1](obfuscated.md) | Forensics | Eth007 | darius-it | [📝 Solution](obfuscated.md) |
 
 ---
 *Back to [Main README](../README.md)*
