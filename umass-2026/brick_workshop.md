@@ -40,28 +40,36 @@ To get the flag, the function `clutch_score()` must return exactly `0x23ccdu` (1
 
 The scoring formula is:
 
-$$(((mold\_id \gg 2) \& 0x43u) \mid pigment\_code) + (pigment\_code \ll 1)$$
+```text
+(((mold_id >> 2) & 0x43u) | pigment_code) + (pigment_code << 1)
+```
 
-While the bitwise operators look intimidating, we can simplify the equation by choosing a `mold_id` that clears the first half of the expression. If we set $mold\_id = 0$:
+While the bitwise operators look intimidating, we can simplify the equation by choosing a `mold_id` that clears the first half of the expression. If we set `mold_id = 0`:
 
-1. $(0 \gg 2)$ is $0$.
+1. `(0 >> 2)` is `0`.
     
-2. $(0 \& 0x43u)$ is $0$.
+2. `(0 & 0x43u)` is `0`.
     
-3. $(0 \mid pigment\_code)$ simplifies to just $pigment\_code$.
+3. `(0 | pigment_code)` simplifies to just `pigment_code`.
     
 
 The remaining equation is:
 
-$$pigment\_code + (pigment\_code \ll 1)$$
+```text
+pigment_code + (pigment_code << 1)
+```
 
-Since a bitwise left shift by 1 $( \ll 1)$ is the same as multiplying by 2, the formula becomes:
+Since a bitwise left shift by 1 `(<< 1)` is the same as multiplying by 2, the formula becomes:
 
-$$pigment\_code + (pigment\_code \times 2) = 3 \times pigment\_code$$
+```text
+pigment_code + (pigment_code * 2) = 3 * pigment_code
+```
 
 To find the required `pigment_code`, we just divide our target by 3:
 
-$$146637 / 3 = 48879$$
+```text
+146637 / 3 = 48879
+```
 
 ### Getting the flag
 Putting all of it together,  the steps for this exploit are fairly simple:
